@@ -4,7 +4,7 @@ let app = new Vue({
     settings: false,
     seconds: 10,
     step: 0,
-    cap: 10,
+    cap: 5,
     words: [
       {
         Слово: "to back up (backup)",
