@@ -2,6 +2,7 @@ let app = new Vue({
   el: "#app",
   data: {
     settings: false,
+    nextUrl: "cheat-sheet.html",
     seconds: 10,
     step: 0,
     cap: 5,
@@ -43,8 +44,12 @@ let app = new Vue({
       let length = this.words.length;
       this.step++;
       if (this.current + 1 > length) {
+        this.changePage();
         this.step = 0;
       }
+    },
+    changePage() {
+      document.location.href = this.nextUrl;
     }
   }
 });
