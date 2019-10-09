@@ -5,7 +5,7 @@ let app = new Vue({
     nextUrl: "cheat-sheet.html",
     seconds: 10,
     step: 0,
-    cap: 5,
+    cap: 6,
     words: [
       {
         Слово: "to back up (backup)",

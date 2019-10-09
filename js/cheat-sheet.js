@@ -2,7 +2,7 @@ let app = new Vue({
   el: "#app",
   data: {
     step: 0,
-    seconds: 30,
+    seconds: 120,
     pages: [{}],
     nextUrl: "tv.html"
   },
