@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <div class="container" id="app">
+    <div class="container-fluid" id="app">
       <nav class="navbar navbar-light bg-light  mb-4">
         <a class="ml-5 navbar-brand" href="#!">Слова в программировании</a>
         <div class="custom-control custom-checkbox">
@@ -57,7 +57,7 @@
           <th>Перевод</th>
         </tr>
         <template v-for="word in showWords">
-          <tr>
+          <tr style="font-size: 300%">
             <td class=" text-monospace">{{ word["Слово"] }}</td>
             <td class="">{{ word["Перевод"] }}</td>
           </tr>
