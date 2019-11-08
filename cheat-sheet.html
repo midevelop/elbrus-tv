@@ -22,16 +22,22 @@
 
   <body>
     <div class="container-fluid" id="app">
+      
       <nav class="navbar navbar-light bg-light  mb-4">
         <a class="ml-5 navbar-brand" href="#!"
           >Шпаргалка <i>{{ currentPage.title }}</i></a
         >
+        <div class="">
+          <button class="btn" @click="step--">-</button>
+          <button class="btn" @click="step++">+</button>
+        </div>
         <div class="custom-control custom-checkbox">
           <input
             type="checkbox"
             class="custom-control-input"
             id="customCheck1"
           />
+
           <label class="custom-control-label" for="customCheck1"
             >Настройки</label
           >
